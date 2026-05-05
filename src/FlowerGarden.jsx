@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
+import bgMusic from './HelpFiles/Hamaki - Mel Bedaya (Official Lyric Video)  حماقي - م البداية - كلمات.mp3';
 
 export default function FlowerGarden() {
   const [flowers, setFlowers] = useState([]);
@@ -68,7 +69,7 @@ export default function FlowerGarden() {
 
   return (
     <div style={{ width: '100vw', height: '100dvh', background: '#fff1f2', position: 'relative', overflow: 'hidden' }}>
-      <audio ref={audioRef} src="src\HelpFiles\Hamaki - Mel Bedaya (Official Lyric Video)  حماقي - م البداية - كلمات.mp3" loop />
+      <audio ref={audioRef} src={bgMusic} loop />
       
       <button 
         onClick={toggleMusic}
