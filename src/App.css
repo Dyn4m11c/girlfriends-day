@@ -1,0 +1,71 @@
+/* App.css */
+.app-container {
+  width: 100vw;
+  height: 100dvh; /* Dynamic viewport height for mobile Safari */
+  background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 50%, #581c87 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  z-index: 50;
+  width: 90%;
+  max-width: 380px;
+}
+
+.primary-button {
+  background: linear-gradient(90deg, #f472b6, #fb7185);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.5);
+  transition: transform 0.2s;
+}
+
+.primary-button:active {
+  transform: scale(0.95);
+}
+
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+/* Authentic Gauge Styling */
+.gauge-container {
+  position: relative;
+  width: 260px;
+  height: 130px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.needle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  height: 110px;
+  background: white;
+  border-radius: 4px;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
