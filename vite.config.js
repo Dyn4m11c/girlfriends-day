@@ -12,5 +12,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/girlfriends-day-2026/',
+  base: '/girlfriends-day/',
 })
