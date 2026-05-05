@@ -105,14 +105,14 @@ export default function FlowerGarden() {
               cursor: 'pointer'
             }}
           >
-            {f.type === 'Red' ? '🌹' : f.type === 'Yellow' ? '🌻' : '🌸'}
+            {f.type === 'أحمر' ? '🌹' : f.type === 'أصفر' ? '🌻' : '🌸'}
           </motion.div>
         ))}
       </AnimatePresence>
 
       {!done && (
         <div className="fixed-center" style={{ background: 'rgba(255,255,255,0.8)', padding: '25px', borderRadius: '35px', display: 'flex', gap: '15px', backdropFilter: 'blur(10px)', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-          {['Red', 'Yellow', 'Pink'].map(c => (
+          {['أحمر', 'أصفر', 'زهري'].map(c => (
             <button key={c} onClick={() => plant(c)} className="primary-button" style={{ background: c === 'Red' ? '#ef4444' : c === 'Yellow' ? '#eab308' : '#ec4899' }}>{c}</button>
           ))}
         </div>
